@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.002s</div>
+<div class="counter">0.151s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,99 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="initializationError"></a>
-<h3 class="failures">initializationError</h3>
-<span class="code">
-<pre>org.springframework.beans.factory.BeanDefinitionStoreException: Failed to read candidate component class: file [/Users/nohyeonjong/IdeaProjects/hpaperstudy1/build/classes/java/test/com/hpaper/book/springboot/web/HelloControllerTest.class]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/Users/nohyeonjong/IdeaProjects/hpaperstudy1/build/classes/java/test/com/hpaper/book/springboot/web/HelloControllerTest.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 59
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:454)
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.findCandidateComponents(ClassPathScanningCandidateComponentProvider.java:316)
-	at org.springframework.boot.test.context.AnnotatedClassFinder.scanPackage(AnnotatedClassFinder.java:90)
-	at org.springframework.boot.test.context.AnnotatedClassFinder.findFromPackage(AnnotatedClassFinder.java:82)
-	at org.springframework.boot.test.context.AnnotatedClassFinder.findFromClass(AnnotatedClassFinder.java:68)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.getOrFindConfigurationClasses(SpringBootTestContextBootstrapper.java:232)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.processMergedContextConfiguration(SpringBootTestContextBootstrapper.java:149)
-	at org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper.processMergedContextConfiguration(WebMvcTestContextBootstrapper.java:36)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:395)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildDefaultMergedContextConfiguration(AbstractTestContextBootstrapper.java:312)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildMergedContextConfiguration(AbstractTestContextBootstrapper.java:265)
-	at org.springframework.test.context.support.AbstractTestContextBootstrapper.buildTestContext(AbstractTestContextBootstrapper.java:108)
-	at org.springframework.boot.test.context.SpringBootTestContextBootstrapper.buildTestContext(SpringBootTestContextBootstrapper.java:98)
-	at org.springframework.test.context.TestContextManager.&lt;init&gt;(TestContextManager.java:139)
-	at org.springframework.test.context.TestContextManager.&lt;init&gt;(TestContextManager.java:124)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTestContextManager(SpringJUnit4ClassRunner.java:151)
-	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.&lt;init&gt;(SpringJUnit4ClassRunner.java:142)
-	at org.springframework.test.context.junit4.SpringRunner.&lt;init&gt;(SpringRunner.java:49)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:78)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:119)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: file [/Users/nohyeonjong/IdeaProjects/hpaperstudy1/build/classes/java/test/com/hpaper/book/springboot/web/HelloControllerTest.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 59
-	at org.springframework.core.type.classreading.SimpleMetadataReader.&lt;init&gt;(SimpleMetadataReader.java:57)
-	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
-	at org.springframework.core.type.classreading.CachingMetadataReaderFactory.getMetadataReader(CachingMetadataReaderFactory.java:132)
-	at org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider.scanCandidateComponents(ClassPathScanningCandidateComponentProvider.java:430)
-	... 58 more
-Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 59
-	at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:184)
-	at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:166)
-	at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:152)
-	at org.springframework.asm.ClassReader.&lt;init&gt;(ClassReader.java:273)
-	at org.springframework.core.type.classreading.SimpleMetadataReader.&lt;init&gt;(SimpleMetadataReader.java:54)
-	... 61 more
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -164,25 +78,66 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 </tr>
 </thead>
 <tr>
-<td class="failures">initializationError</td>
-<td class="failures">0.002s</td>
-<td class="failures">failed</td>
+<td class="success">helloDto</td>
+<td class="success">0.147s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">hello가_리턴된다</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:51:11.058 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hpaper.book.springboot.web.HelloControllerTest]
-20:51:11.069 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-20:51:11.077 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-20:51:11.104 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hpaper.book.springboot.web.HelloControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
-20:51:11.152 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hpaper.book.springboot.web.HelloControllerTest], using SpringBootContextLoader
-20:51:11.160 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hpaper.book.springboot.web.HelloControllerTest]: class path resource [com/hpaper/book/springboot/web/HelloControllerTest-context.xml] does not exist
-20:51:11.167 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hpaper.book.springboot.web.HelloControllerTest]: class path resource [com/hpaper/book/springboot/web/HelloControllerTestContext.groovy] does not exist
-20:51:11.168 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hpaper.book.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-20:51:11.171 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hpaper.book.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-20:51:11.308 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hpaper.book.springboot.web.HelloControllerTest]
+<pre>12:33:22.811 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.815 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+12:33:22.818 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+12:33:22.827 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.hpaper.book.springboot.web.HelloControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+12:33:22.836 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hpaper.book.springboot.web.HelloControllerTest], using SpringBootContextLoader
+12:33:22.838 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hpaper.book.springboot.web.HelloControllerTest]: class path resource [com/hpaper/book/springboot/web/HelloControllerTest-context.xml] does not exist
+12:33:22.838 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.hpaper.book.springboot.web.HelloControllerTest]: class path resource [com/hpaper/book/springboot/web/HelloControllerTestContext.groovy] does not exist
+12:33:22.838 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.hpaper.book.springboot.web.HelloControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+12:33:22.838 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.hpaper.book.springboot.web.HelloControllerTest]: HelloControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:33:22.870 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.920 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/nohyeonjong/IdeaProjects/hpaperstudy1/build/classes/java/main/com/hpaper/book/springboot/Application.class]
+12:33:22.921 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.hpaper.book.springboot.Application for test class com.hpaper.book.springboot.web.HelloControllerTest
+12:33:22.922 [Test worker] DEBUG org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - @TestExecutionListeners is not present for class [com.hpaper.book.springboot.web.HelloControllerTest]: using defaults.
+12:33:22.922 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+12:33:22.932 [Test worker] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5375d0ad, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1a508c45, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@54831273, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4d6a413c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@30671084, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2e4b8069, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@62171f59, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7debd186, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@75001d8f, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@73a838e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5d0da9e7, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7ec92421, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@bd0b212, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@58a56615]
+12:33:22.933 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.934 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.934 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.934 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.936 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@29d00fd3 testClass = HelloControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7543d05e testClass = HelloControllerTest, locations = '{}', classes = '{class com.hpaper.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@37b29d56, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9f0d6b45, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c03aed6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@788d8584, [ImportsContextCustomizer@624f6aac key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@11f4cd99, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7440a8b0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+12:33:22.937 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.937 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.hpaper.book.springboot.web.HelloControllerTest]
+12:33:22.940 [Test worker] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@29d00fd3 testClass = HelloControllerTest, testInstance = com.hpaper.book.springboot.web.HelloControllerTest@7ad62b7, testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7543d05e testClass = HelloControllerTest, locations = '{}', classes = '{class com.hpaper.book.springboot.Application}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@37b29d56, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@9f0d6b45, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@c03aed6b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@788d8584, [ImportsContextCustomizer@624f6aac key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@11f4cd99, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@7440a8b0, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+12:33:22.992 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.7.RELEASE)
+
+2021-07-07 12:33:23.120  INFO 8320 --- [    Test worker] c.h.b.s.web.HelloControllerTest          : Starting HelloControllerTest on nohyeonjong-ui-MacBookAir.local with PID 8320 (started by nohyeonjong in /Users/nohyeonjong/IdeaProjects/hpaperstudy1)
+2021-07-07 12:33:23.121  INFO 8320 --- [    Test worker] c.h.b.s.web.HelloControllerTest          : No active profile set, falling back to default profiles: default
+2021-07-07 12:33:23.764  INFO 8320 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-07 12:33:23.807  INFO 8320 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-07 12:33:23.953  INFO 8320 --- [    Test worker] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ee7bc5d5-8a37-4460-9d11-f28be1ce3a4c
+
+2021-07-07 12:33:24.077  INFO 8320 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43cd4850, org.springframework.security.web.context.SecurityContextPersistenceFilter@a844c2, org.springframework.security.web.header.HeaderWriterFilter@4c6d1805, org.springframework.security.web.csrf.CsrfFilter@58effd93, org.springframework.security.web.authentication.logout.LogoutFilter@2dfba995, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@715986ac, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3107873a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b74c4ab, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5383f4ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d00f784, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@520ab95e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@a14e2b3, org.springframework.security.web.session.SessionManagementFilter@2e1314c5, org.springframework.security.web.access.ExceptionTranslationFilter@4adea550, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5957c15b]
+2021-07-07 12:33:24.107  INFO 8320 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2021-07-07 12:33:24.107  INFO 8320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2021-07-07 12:33:24.112  INFO 8320 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 5 ms
+2021-07-07 12:33:24.135  INFO 8320 --- [    Test worker] c.h.b.s.web.HelloControllerTest          : Started HelloControllerTest in 1.137 seconds (JVM running for 1.595)
 </pre>
 </span>
 </div>
@@ -194,7 +149,7 @@ Caused by: java.lang.IllegalArgumentException: Unsupported class file major vers
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.7</a> at 2021. 6. 23. 오후 8:51:11</p>
+<a href="http://www.gradle.org">Gradle 4.10.2</a> at 2021. 7. 7 오후 12:33:27</p>
 </div>
 </div>
 </body>
