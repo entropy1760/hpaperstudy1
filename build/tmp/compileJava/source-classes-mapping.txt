@@ -1,4 +1,0 @@
-com/hpaper/book/springboot/web/HelloController.java
- com.hpaper.book.springboot.web.HelloController
-com/hpaper/book/springboot/Application.java
- com.hpaper.book.springboot.Application

@@ -1,2 +1,0 @@
-com/hpaper/book/springboot/web/HelloControllerTest.java
- com.hpaper.book.springboot.web.HelloControllerTest
